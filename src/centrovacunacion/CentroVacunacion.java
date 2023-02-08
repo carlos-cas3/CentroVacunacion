@@ -1,20 +1,30 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package centrovacunacion;
 
-/**
- *
- * @author usuario
- */
-public class CentroVacunacion {
 
-    /**
-     * @param args the command line arguments
-     */
+import java.util.ArrayList;
+import java.util.Iterator;
+
+
+public class CentroVacunacion {
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        
+        ArrayList<Persona> listapersonas = new ArrayList<>();
+        listapersonas.add(new Paciente("Carlos","Alberto","987654321","DNI","70784532","Callao","11/01/2004",new  Vacuna("123","24","Pfizer",12,2021),"123456"));
+        listapersonas.add(new Trabajador("Jose","Benito","123456789","Pasaporte Ext.","12345","Los Olivos","12/07/1900",new  Vacuna("123","24","Astrazeneca",12,2001),"A102"));
+        listapersonas.add(new Paciente("Jorge","Flores","978645311","Pasaporte","70734432","SMP","11/01/2000",new  Vacuna("323","29","Moderna",10,2022),"113655"));
+
+        for(Persona p : listapersonas) {
+            if(p instanceof Paciente) {
+                System.out.println(p.getNombre() + " " + p.getApellido());
+            }
+            if (p instanceof Trabajador) {
+                System.out.println(p.getNombre() + " " + p.getApellido());
+            }
+        }
+        
+
+
+
     }
-    
 }
