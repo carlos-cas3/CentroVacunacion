@@ -90,7 +90,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("REGISTRO PACIENTE");
+        jLabel4.setText("CONSULTA PACIENTE");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -112,7 +112,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         buttonRegistrarPaciente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         buttonRegistrarPaciente.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         buttonRegistrarPaciente.setForeground(new java.awt.Color(0, 51, 255));
-        buttonRegistrarPaciente.setLabel("REGISTRAR");
+        buttonRegistrarPaciente.setLabel("CONSULTAR");
         buttonRegistrarPaciente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonRegistrarPacienteActionPerformed(evt);
@@ -389,9 +389,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private void buttonRegistrarPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonRegistrarPacienteActionPerformed
         // TODO add your handling code here:
         dispose();
-        RegistroPaciente rp = new RegistroPaciente();
-        rp.setLocationRelativeTo(null);
-        rp.setVisible(true);
+        ConsultaPaciente cp = new ConsultaPaciente();
+        cp.setLocationRelativeTo(null);
+        cp.setVisible(true);
     }//GEN-LAST:event_buttonRegistrarPacienteActionPerformed
 
     private void buttonSalirMenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSalirMenuPrincipalActionPerformed
