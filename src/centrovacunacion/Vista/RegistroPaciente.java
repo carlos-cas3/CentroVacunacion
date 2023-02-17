@@ -1,6 +1,5 @@
-package javaapplication21;
+package centrovacunacion.Vista;
 
-import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JOptionPane;
@@ -299,7 +298,7 @@ public class RegistroPaciente extends javax.swing.JFrame {
     private void buttonRegresarRegisPatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonRegresarRegisPatientActionPerformed
         // TODO add your handling code here:
         dispose();
-        MenuP mp = new MenuP();
+        MenuPrincipal mp = new MenuPrincipal();
         mp.setLocationRelativeTo(null);
         mp.setVisible(true);
     }//GEN-LAST:event_buttonRegresarRegisPatientActionPerformed
